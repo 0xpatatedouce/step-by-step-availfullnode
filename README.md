@@ -49,7 +49,7 @@ To check the node status go on the avail telemetry: http://telemetry.avail.tools
 you should be see your node syncing in grey like in the example
 
 Second method:
-mkdir -p output
+mkdir -p output 
 cargo run --locked --release -- --chain kate -d ./output
 
 sudo touch /etc/systemd/system/availd.service
