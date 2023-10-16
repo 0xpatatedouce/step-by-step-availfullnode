@@ -24,25 +24,36 @@ git clone https://github.com/availproject/avail.git
 
 4)Client installation:
 (There are two methods to run your full node but I recommend the second for a better monitoring)
+
 First method:
 cd avail
 screen -S avail
 cargo build --release -p data-avail
+![debut 11](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/3ea7b4ab-999f-4c52-aab7-cc8295e7a416)
+![finis 2](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ef51ac27-7356-4083-b2d7-4a443ee132c0)
+final result
+
 cargo build --release
+![debut 1](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/0c5a9a8e-a293-4403-84c2-871bdd664799)
+![finiiii](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/2549c312-e40a-4270-869c-723438c888ee)
+final result
 
 5)Run the node
-./target/release/data-avail --base-path `pwd`/data --chain kate --name patatedouce
-
+./target/release/data-avail --base-path `pwd`/data --chain kate --name patatedoucetest
 Change “patatedouce” whit your node name before running your node
+the output 
+![oui](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/74d9d6bc-eadd-4483-8c84-048160a8cfcd)
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appear on the site under the “node name”
+![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/63db3495-3bc1-40e8-a0fd-16424849ace0)
+you should be see your node syncing in grey like in the example
 
 Second method:
 mkdir -p output
 cargo run --locked --release -- --chain kate -d ./output
 
-touch /etc/systemd/system/availd.service
-nano /etc/systemd/system/availd.service
+sudo touch /etc/systemd/system/availd.service
+sudo nano /etc/systemd/system/availd.service
 
 [Unit]
 Description=Avail Validator
@@ -57,18 +68,28 @@ RestartSec=120
 WantedBy=multi-user.target
 
 Save it : Ctrl + x
+
 To enable this to autostart on bootup run
 systemctl enable availd.service
+
 Start it manually with:
 systemctl start availd.service
+
 You can check that it's working with:
 systemctl status availd.service
+
 You can tail the logs with journalctllike so:
 journalctl -f -u availd
 
-S/o to Dihncongtac221 for the systemclt on the second method, he made to a guide for running a full node :
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appear on the site under the “node name”
+![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ac9463d1-6257-436b-b461-f7d03848caf3)
+
+S/o to Dihncongtac221 for the systemclt setup on the second method, he did a guide and a video for running a full node :
+https://github.com/DinhCongTac221/Install-Avail-Full-Node
+https://youtu.be/HYBzK-jJIeQ
+
+
 
 Notable commands :
 To exit the open window: (Ctrl + a + d)
