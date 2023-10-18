@@ -67,9 +67,9 @@ Change “patatedouce” whit your node name before running your node
 the output 
 ![oui](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/74d9d6bc-eadd-4483-8c84-048160a8cfcd)
 
-To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appear on the site under the “node name”
+To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appearing on the site under the “node name”
 ![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/63db3495-3bc1-40e8-a0fd-16424849ace0)
-you should be see your node syncing in grey like in the example
+you should be seen your node syncing in grey like in the example
 
 Second method:
 
@@ -130,8 +130,9 @@ If you wan to stop the node:
 sudo systemctl stop availd.service
 ```
 
-To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appear on the site under the “node name”
+To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appearing on the site under the “node name”
 ![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ac9463d1-6257-436b-b461-f7d03848caf3)
+you should be seen your node syncing in grey like in the example
 
 S/o to Dihncongtac221 for the systemclt setup on the second method, he did a guide and a video for running a full node :
 https://github.com/DinhCongTac221/Install-Avail-Full-Node
