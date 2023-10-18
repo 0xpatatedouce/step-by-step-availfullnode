@@ -65,7 +65,6 @@ final result
 ```
 
 Change “patatedouce” whit your node name before running your node
-the output 
 ![oui](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/e183e399-6c1e-46f0-9b04-ad616c5d0a35)
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appearing on the site under the “node name”
