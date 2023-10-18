@@ -46,16 +46,17 @@ screen -S avail
 cargo build --release -p data-avail
 ```
 
-![debut 11](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/3ea7b4ab-999f-4c52-aab7-cc8295e7a416)
-![finis 2](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ef51ac27-7356-4083-b2d7-4a443ee132c0)
+![debut 11](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/8d8f5096-adaf-4115-b5e4-829c8c077a21)
+![finis 2](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/77dcf3a6-c78b-4590-8249-6b06075af4ae)
+
 final result
 
 ```
 cargo build --release
 ```
 
-![Employee data]![debut 1](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/0c5a9a8e-a293-4403-84c2-871bdd664799)
-![finiiii](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/2549c312-e40a-4270-869c-723438c888ee)
+![debut 1](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/61fc6b92-8091-4258-81fb-9dd1b7c9646b)
+![finiiii](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/3c86c379-bc15-48fe-b2b9-87264bcda9b7)
 final result
 
 5)Run the node
@@ -65,10 +66,10 @@ final result
 
 Change “patatedouce” whit your node name before running your node
 the output 
-![alt text]![oui](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/74d9d6bc-eadd-4483-8c84-048160a8cfcd)
+![oui](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/e183e399-6c1e-46f0-9b04-ad616c5d0a35)
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appearing on the site under the “node name”
-![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/63db3495-3bc1-40e8-a0fd-16424849ace0)
+![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/d69df11f-54cd-4fe8-854d-a8a654e29311)
 you should be seen your node syncing in grey like in the example
 
 Second method:
@@ -77,13 +78,13 @@ Second method:
 mkdir -p output
 cargo run --locked --release -- --chain kate -d ./output
 ```
+![hh](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/f3a366e3-8e5d-45fd-9a16-98e73f800bf2)
 
 ```
 sudo touch /etc/systemd/system/availd.service
 sudo nano /etc/systemd/system/availd.service
 ```
-
-![syste](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/782ff328-88d0-42aa-a145-4857bdfc375b)
+Copy this and paste it in the file, don’t forge change the name “patatedouce” whit your name
 
 ```
 [Unit]
@@ -98,7 +99,7 @@ RestartSec=120
 [Install]
 WantedBy=multi-user.target
 ```
-
+![syste](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/807fc945-be3b-43e5-a99c-0ff07d08e2b6)
 Ctrl+x press y to save the file and enter to exit
 
 To enable your file:
@@ -116,14 +117,14 @@ You can check the status:
 sudo systemctl status availd.service
 ```
 
-![Capture d’écran 2023-10-16 232922](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/215300f9-26c1-4e21-997f-12b46993ac35)
+![Capture d’écran 2023-10-16 232922](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/b4505035-f6fa-4b54-9bc5-d22819f86018)
 
 check your node log:
 ```
 journalctl -f -u availd
 ```
 
-![log](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/a90fc18a-faf3-4b89-85b0-d1eee01ec84c)
+![log](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/48b64c7b-46c5-4fba-b7bd-ac1903f0c151)
 
 If you wan to stop the node:
 ```
@@ -131,10 +132,11 @@ sudo systemctl stop availd.service
 ```
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appearing on the site under the “node name”
-![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ac9463d1-6257-436b-b461-f7d03848caf3)
+![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ee7f05aa-2ce9-44df-ad00-8c6878286c8b)
 you should be seen your node syncing in grey like in the example
 
-S/o to Dihncongtac221 for the systemclt setup on the second method, he did a guide and a video for running a full node :
+Some others guides:
+https://github.com/0xrishitripathi/avail-anywhere/tree/main
 https://github.com/DinhCongTac221/Install-Avail-Full-Node
 https://youtu.be/HYBzK-jJIeQ
 
