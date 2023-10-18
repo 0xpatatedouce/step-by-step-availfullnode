@@ -11,7 +11,7 @@ sudo apt install make clang pkg-config libssl-dev build-essential git screen pro
 ```
 
 2)Installs Rust :
-```
+```bash
 curl https://sh.rustup.rs -sSf | sh
 ```
 Press 1
