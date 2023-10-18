@@ -64,12 +64,12 @@ final result
 ./target/release/data-avail --base-path `pwd`/data --chain kate --name patatedoucetest
 ```
 
-Change “patatedouce” whit your node name before running your node
+Change “patatedouce” with your node name before running your node
 ![oui](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/e183e399-6c1e-46f0-9b04-ad616c5d0a35)
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appearing on the site under the “node name”
 ![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/d69df11f-54cd-4fe8-854d-a8a654e29311)
-you should be seen your node syncing in grey like in the example
+you should see your node syncing in grey like in the example
 
 Second method:
 
@@ -83,7 +83,7 @@ cargo run --locked --release -- --chain kate -d ./output
 sudo touch /etc/systemd/system/availd.service
 sudo nano /etc/systemd/system/availd.service
 ```
-Copy this and paste it in the file, don’t forge change the name “patatedouce” whit your name
+Copy this and paste it in the file, don’t forget to change the name “patatedouce” whit your name
 
 ```
 [Unit]
@@ -132,7 +132,7 @@ sudo systemctl stop availd.service
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appearing on the site under the “node name”
 ![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ee7f05aa-2ce9-44df-ad00-8c6878286c8b)
-you should be seen your node syncing in grey like in the example
+you should see your node syncing in grey like in the example
 
 Some others guides:
 https://github.com/0xrishitripathi/avail-anywhere/tree/main
