@@ -59,7 +59,10 @@ cargo build --release
 final result
 
 5)Run the node
+```
 ./target/release/data-avail --base-path `pwd`/data --chain kate --name patatedoucetest
+```
+
 Change “patatedouce” whit your node name before running your node
 the output 
 ![oui](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/74d9d6bc-eadd-4483-8c84-048160a8cfcd)
@@ -69,12 +72,20 @@ To check the node status go on the avail telemetry: http://telemetry.avail.tools
 you should be see your node syncing in grey like in the example
 
 Second method:
+
+```
 mkdir -p output
 cargo run --locked --release -- --chain kate -d ./output
+```
 
+```
 sudo touch /etc/systemd/system/availd.service
 sudo nano /etc/systemd/system/availd.service
+```
 
+![syste](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/782ff328-88d0-42aa-a145-4857bdfc375b)
+
+```
 [Unit]
 Description=Avail Validator
 After=network.target
@@ -86,20 +97,27 @@ Restart=always
 RestartSec=120
 [Install]
 WantedBy=multi-user.target
+```
 
-Save it : Ctrl + x
+Ctrl+x press y to save the file and enter to exit
 
-To enable this to autostart on bootup run
-systemctl enable availd.service
+To enable your file:
+```
+sudo systemctl enable availd.service
+```
 
-Start it manually with:
-systemctl start availd.service
+Start the node:
+```
+sudo systemctl start availd.service
+```
 
-You can check that it's working with:
-systemctl status availd.service
+You can check the status:
+```
+sudo systemctl status availd.service
+```
 
-You can tail the logs with journalctllike so:
-journalctl -f -u availd
+
+
 
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appear on the site under the “node name”
