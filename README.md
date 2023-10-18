@@ -54,7 +54,7 @@ final result
 cargo build --release
 ```
 
-![debut 1](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/0c5a9a8e-a293-4403-84c2-871bdd664799)
+![Employee data]![debut 1](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/0c5a9a8e-a293-4403-84c2-871bdd664799)
 ![finiiii](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/2549c312-e40a-4270-869c-723438c888ee)
 final result
 
