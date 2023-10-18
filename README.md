@@ -116,9 +116,19 @@ You can check the status:
 sudo systemctl status availd.service
 ```
 
+![Capture d’écran 2023-10-16 232922](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/215300f9-26c1-4e21-997f-12b46993ac35)
 
+check your node log:
+```
+journalctl -f -u availd
+```
 
+![log](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/a90fc18a-faf3-4b89-85b0-d1eee01ec84c)
 
+If you wan to stop the node:
+```
+sudo systemctl stop availd.service
+```
 
 To check the node status go on the avail telemetry: http://telemetry.avail.tools/ your node will be appear on the site under the “node name”
 ![sync](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ac9463d1-6257-436b-b461-f7d03848caf3)
