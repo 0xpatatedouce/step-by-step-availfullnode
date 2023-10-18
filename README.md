@@ -11,31 +11,45 @@ sudo apt install make clang pkg-config libssl-dev build-essential git screen pro
 ```
 
 2)Installs Rust :
+```
 curl https://sh.rustup.rs -sSf | sh
-Touch 1
+```
+Press 1
 Rust is installed, configure your current shell:
+```
 source $HOME/.cargo/env
+```
 Install nightly :
+```
 rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
+```
 Check the rust version:
+```
 rustc —version
+```
 
 3)Clone the full node repository:
+```
 git clone https://github.com/availproject/avail.git
+```
 
 4)Client installation:
 (There are two methods to run your full node but I recommend the second for a better monitoring)
 
 First method:
+```
 cd avail
 screen -S avail
+```
 cargo build --release -p data-avail
+```
 ![debut 11](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/3ea7b4ab-999f-4c52-aab7-cc8295e7a416)
 ![finis 2](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/ef51ac27-7356-4083-b2d7-4a443ee132c0)
 final result
-
+```
 cargo build --release
+```
 ![debut 1](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/0c5a9a8e-a293-4403-84c2-871bdd664799)
 ![finiiii](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/2549c312-e40a-4270-869c-723438c888ee)
 final result
