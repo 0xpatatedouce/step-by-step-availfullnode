@@ -14,7 +14,7 @@ sudo apt install make clang pkg-config libssl-dev build-essential git screen pro
 ```
 curl https://sh.rustup.rs -sSf | sh
 ```
-Press 1
+Press 1,
 Rust is installed, configure your current shell:
 ```
 source $HOME/.cargo/env
