@@ -83,7 +83,7 @@ cargo run --locked --release -- --chain kate -d ./output
 sudo touch /etc/systemd/system/availd.service
 sudo nano /etc/systemd/system/availd.service
 ```
-Copy this and paste it in the file, don’t forget to change the name “patatedouce” whit your name
+Copy this and paste it in the file, don’t forget to change the name “patatedouce” whit your name:
 
 ```
 [Unit]
