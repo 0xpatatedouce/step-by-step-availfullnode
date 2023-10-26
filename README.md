@@ -43,6 +43,9 @@ cd avail
 screen -S avail
 ```
 ```
+git checkout v1.7.2
+```
+```
 cargo build --release -p data-avail
 ```
 
@@ -75,6 +78,8 @@ Second method:
 
 ```
 mkdir -p output
+mkdir -p data
+git checkout v1.7.2
 cargo run --locked --release -- --chain kate -d ./output
 ```
 ![hh](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/f3a366e3-8e5d-45fd-9a16-98e73f800bf2)
