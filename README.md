@@ -64,7 +64,7 @@ final result
 
 5)Run the node
 ```
-./target/release/data-avail --base-path `pwd`/data --chain kate --name patatedoucetest
+./target/release/data-avail --base-path `pwd`/data --chain goldberg --name patatedoucetest
 ```
 
 Change “patatedouce” with your node name before running your node
@@ -80,7 +80,7 @@ Second method:
 mkdir -p output
 mkdir -p data
 git checkout v1.7.2
-cargo run --locked --release -- --chain kate -d ./output
+cargo run --locked --release -- --chain goldberg -d ./output
 ```
 ![hh](https://github.com/0xpatatedouce/step-by-step-availfullnode/assets/123324096/f3a366e3-8e5d-45fd-9a16-98e73f800bf2)
 
@@ -97,7 +97,7 @@ After=network.target
 StartLimitIntervalSec=0
 [Service]
 User=root
-ExecStart= /root/avail/target/release/data-avail --base-path `pwd`/data --chain kate --name "patatedoucetest"
+ExecStart= /root/avail/target/release/data-avail --base-path `pwd`/data --chain goldberg --name "patatedoucetest"
 Restart=always
 RestartSec=120
 [Install]
