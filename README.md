@@ -1,5 +1,5 @@
 # step by step  Avail fullnode 
- tutorial to boostsrap a fullnode on the avail kate testnet
+ tutorial to boostsrap a fullnode on the avail Goldberg testnet
 Hey with this tutorial you can run an Avail full node step by step :
 You need a Linux virtual machine 
 
